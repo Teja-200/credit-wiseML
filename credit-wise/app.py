@@ -65,7 +65,6 @@ with st.form("loan_form"):
 if submitted:
     # Match the numerical feature order used during training.
     numeric = pd.DataFrame([{
-        "Applicant_ID": applicant_id,
         "Applicant_Income": income,
         "Coapplicant_Income": co_income,
         "Age": age,
