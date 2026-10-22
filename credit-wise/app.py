@@ -17,7 +17,6 @@ st.write("Enter the applicant's details below.")
 with st.form("loan_form"):
     st.subheader("Applicant Information")
 
-    applicant_id = st.number_input("Applicant ID", min_value=1, value=1, step=1)
     income = st.number_input("Applicant Income", min_value=0.0, value=15000.0)
     co_income = st.number_input("Coapplicant Income", min_value=0.0, value=0.0)
     employment = st.selectbox(
