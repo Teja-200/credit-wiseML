@@ -3,7 +3,11 @@ import joblib
 
 st.title("Credit Wise - Loan Prediction")
 
-model = joblib.load("credit_model.pkl")
+from pathlib import Path
+import joblib
+
+model_path = Path(__file__).parent / "credit_model.pkl"
+model = joblib.load(model_path)
 
 st.write("Enter the required applicant details.")
 
